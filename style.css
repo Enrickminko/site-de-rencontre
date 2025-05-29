@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f4f4f4;
+    transition: background-color 0.5s;
+}
+.container {
+    background: rgb(227, 227, 223);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    text-align: center;
+}
+h2 {
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+}
+.section {
+    background-color: rgb(226, 237, 9);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+input, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+button {
+    background-color: rgb(108, 236, 10);
+    color: rgb(236, 238, 232);
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.4;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Site de Rencontre</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 id="welcome-mes">Please Enter Your Details for our dating Website! </h2>
+        
+        <form action="register.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+            
+
+            <div class=" section">
+                <h3>Your Face</h3>
+                
+                <input type="file" >
+            </div>
+            <div class="section">
+                <h3>Your General Details</h3>
+                <input type="text" name="your full name" id=" name" placeholder="your full name" required>
+                <select name="gender" id="gender" onchange="changeTheme()">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <input type="number" name="age" placeholder="Age" required>
+                <input type="date" name="dob" required>
+                <input type="color" name="favorite_color" placeholder="Favorite Color">
+                <input type="text" name="country" placeholder="Country" required>
+            </div>
+
+            <div class="section">
+                <h3>Your Indicators</h3>
+                <label for="height">Height:</label>
+                <input type="range" name="height" min="100" max="220">
+                <label for="salary">Salary:</label>
+                <input type="range" name="salary" min="1000" max="100000">
+            </div>
+
+            <div class="section">
+                <h3>Your Contact Information</h3>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="mobile" placeholder="Mobile">
+                <input type="text" name="address" placeholder="Address">
+                <select name="contact_method">
+                    <option value="email">Email</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="in_app">In-App Chat</option>
+                </select>
+            </div>
+            
+            <button type="submit" id="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
